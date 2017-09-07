@@ -1,0 +1,11 @@
+git clone https://github.com/udacity/AdvancedAndroid_Emojify.git
+git checkout TLIB.02-Exercise-DetectFaces
+
+git remote set-url origin https://github.com/antvit69/Emojify.git
+git checkout -b 02-DetectFaces
+git add -A
+git commit -m "Initial commit"
+git remote -v
+git branch -v
+git push origin 02-DetectFaces
+git status -v
