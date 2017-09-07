@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
         mShareFab.setVisibility(View.VISIBLE);
         mClearFab.setVisibility(View.VISIBLE);
 
-        // Resample the saved image to fit the ImageView
+        // Resample the saved image to fit the ImageView and use less memory
         mResultsBitmap = BitmapUtils.resamplePic(this, mTempPhotoPath);
 
         // Set the new bitmap to the ImageView

@@ -14,6 +14,25 @@
 * limitations under the License.
 */
 
+/*
+resamplePic():
+ The resamplePic() method gets the height and width of the device screen in pixels, and resamples the passed in image to fit the screen.
+
+createTempImageFile():
+ This method creates a temporary file in the external cache directory and returns the new temp file.
+
+deleteImageFile():
+ This method attempts to delete the image at the passed in path. If it fails, it shows a toast.
+
+galleryAddPic():
+ This method cause the image content provider to add the image from the passed in path to the system gallery, so it can be found by other app. It is only called inside the saveImage() described below.
+
+saveImage():
+ This method saves the passed in Bitmap in the External Storage, in the subdirectory called "Emojify". It also adds the image to the system gallery by calling the above galleryAddPic().
+
+shareImage():
+ This method creates a share implicit intent, which will bring up the system chooser with apps that handle sharing an image.
+ */
 package com.example.android.emojify;
 
 import android.content.Context;
